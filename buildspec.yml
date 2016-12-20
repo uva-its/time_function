@@ -4,7 +4,7 @@ phases:
     commands:
       - npm install time
       - aws cloudformation package 
-         --template-file samTemplate.yaml \
+         --template-file SAM_template.yaml \
          --s3-bucket cloudtrails.virginia.edu \
          --output-template-file NewSamTemplate.yaml
 artifacts:
